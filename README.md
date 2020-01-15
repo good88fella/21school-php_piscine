@@ -1,2 +1,11 @@
 # 21school-php_piscine
 <a href="https://github.com/good88fella/21school-php_piscine/blob/master/d00/d00.en.pdf">d00-Subject</a>
+<a href="https://github.com/good88fella/21school-php_piscine/blob/master/d01/d01.en.pdf">d01-Subject</a>
+<a href="https://github.com/good88fella/21school-php_piscine/blob/master/d02/d02.en.pdf">d02-Subject</a>
+<a href="https://github.com/good88fella/21school-php_piscine/blob/master/d03/d03.en.pdf">d03-Subject</a>
+<a href="https://github.com/good88fella/21school-php_piscine/blob/master/d04/d04.en.pdf">d04-Subject</a>
+<a href="https://github.com/good88fella/21school-php_piscine/blob/master/d05/d05.en.pdf">d05-Subject</a>
+<a href="https://github.com/good88fella/21school-php_piscine/blob/master/d06/d06.en.pdf">d06-Subject</a>
+<a href="https://github.com/good88fella/21school-php_piscine/blob/master/d07/d07.en.pdf">d07-Subject</a>
+<a href="https://github.com/good88fella/21school-php_piscine/blob/master/d08/d08.en.pdf">d08-Subject</a>
+<a href="https://github.com/good88fella/21school-php_piscine/blob/master/d09/d09.en.pdf">d09-Subject</a>
