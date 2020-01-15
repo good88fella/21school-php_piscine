@@ -1,0 +1,17 @@
+
+<- Square ----------------------------------------------------------------------
+Square is a position on the map
+
+is a child of Map
+
+It is defined by X and Y
+
+-> public function __Construct (*)
+Take as parameter all the parameters of the class.
+Creates an instance of the class in questions.
+
+-> public staic function doc ()
+Displays the doc.
+
+-> Getter and Setter according to needs.
+---------------------------------------------------------------------- Square ->

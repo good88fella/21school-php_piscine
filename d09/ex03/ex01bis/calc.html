@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calc</title>
+    <style>
+        form {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 40%;
+            height: 20%;
+            text-align: center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+<form name="calcForm">
+    <input name="number1" type="text">
+    <select name="operations">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input name="number2" type="text">
+    <input type="submit" value="Try me!">
+</form>
+<script>
+    $(document).ready(function () {
+        setInterval(() => alert('Please, use me...'), 30000);
+        var calcForm = $('form[name=calcForm]');
+        calcForm.submit(calculate);
+    });
+
+    function calculate() {
+        var num1 = parseInt($('input[name=number1]').val());
+        var num2 = parseInt($('input[name=number2]').val());
+        var result;
+        if (!isNaN(num1) && !isNaN(num2) && num1 >= 0 && num2 >= 0) {
+            var op = $('select[name=operations]').val();
+            if ((op === '/' || op === '%') && num2 === 0) {
+                result = 'It’s over 9000!';
+            } else {
+                switch (op) {
+                    case ('+') :
+                        result = num1 + num2;
+                        break;
+                    case ('-') :
+                        result = num1 - num2;
+                        break;
+                    case ('*') :
+                        result = num1 * num2;
+                        break;
+                    case ('/') :
+                        result = num1 / num2;
+                        break;
+                    case ('%') :
+                        result = num1 % num2;
+                        break;
+                }
+            }
+            console.log(result);
+        } else {
+            result = 'Error :(';
+        }
+        alert(result);
+    }
+</script>
+</body>
+</html>

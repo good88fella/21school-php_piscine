@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="todo.js"></script>
+    <style>
+        body {
+            background: #1D1B26;
+        }
+
+        button[name=Create] {
+            text-decoration: none;
+            outline: none;
+            color: black;
+            display: inline-block;
+            position: relative;
+            width: 98%;
+            padding: 1% 1%;
+            border: 1px solid;
+            border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+            margin: 1% 1%;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            overflow: hidden;
+            letter-spacing: 2px;
+            transition: .8s cubic-bezier(.165,.84,.44,1);
+        }
+
+        button[name=Create]:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 0;
+            width: 100%;
+            z-index: -1;
+            color: white;
+            background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+            transition: .8s cubic-bezier(.165,.84,.44,1);
+        }
+
+        button[name=Create]:hover {
+            background: rgba(255,255,255,0);
+        }
+
+        button[name=Create]:hover:before {
+            bottom: 0;
+            top: auto;
+            height: 100%;
+        }
+
+        .todo {
+            text-decoration: none;
+            text-align: center;
+            outline: none;
+            color: red;
+            display: inline-block;
+            position: relative;
+            width: 96%;
+            padding: 1% 1%;
+            border: 1px solid;
+            margin: 1% 1%;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2px;
+        }
+    </style>
+    <title>todo</title>
+</head>
+<body>
+    <div id="ft_list">
+        <button name="Create">New</button>
+    </div>
+</body>
+</html>
